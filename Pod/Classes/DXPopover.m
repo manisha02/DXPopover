@@ -17,7 +17,7 @@
 @property (nonatomic, assign) CGPoint arrowShowPoint;
 @property (nonatomic, weak) UIView *contentView;
 @property (nonatomic, assign) CGRect contentViewFrame;
-@property (nonatomic, strong) UIColor *contentColor;
+//@property (nonatomic, strong) UIColor *contentColor;
 
 @end
 
