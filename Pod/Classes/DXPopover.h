@@ -42,6 +42,12 @@ typedef NS_ENUM(NSUInteger, DXPopoverMaskType) {
 @property (nonatomic, assign) CGFloat cornerRadius;
 
 /**
+ *  The popover arrow color, default is white;
+ */
+
+@property (nonatomic, strong) UIColor *contentColor;
+
+/**
  *  The popover animation show in duration, default is 0.4;
  */
 @property (nonatomic, assign) CGFloat animationIn;
