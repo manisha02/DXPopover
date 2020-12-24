@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, DXPopoverMaskType) {
 /**
  *  The popover corner radius, default is 7.0;
  */
-@property (nonatomic, assign) CGFloat cornerRadius;
+@property (nonatomic, assign) CGFloat cRadius;
 
 /**
  *  The popover arrow color, default is white;
