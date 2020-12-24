@@ -57,7 +57,7 @@
 
 - (void)commonInit {
     self.arrowSize = CGSizeMake(11.0, 9.0);
-    self.cornerRadius = 5.0;
+    self.cRadius = 5.0;
     self.backgroundColor = [UIColor whiteColor];
     self.animationIn = 0.4;
     self.animationOut = 0.3;
@@ -196,7 +196,7 @@
     BOOL isEdgeZero = UIEdgeInsetsEqualToEdgeInsets(self.contentInset, UIEdgeInsetsZero);
     // if the edgeInset is not be setted, we use need set the contentViews cornerRadius
     if (isEdgeZero) {
-        self.contentView.layer.cornerRadius = self.cornerRadius;
+        self.contentView.layer.cornerRadius = self.cRadius;
         self.contentView.layer.masksToBounds = YES;
     } else {
         contentFrame.size.width += self.contentInset.left + self.contentInset.right;
@@ -356,7 +356,7 @@
     // the point in the ourself view coordinator
     CGPoint arrowPoint = [self.containerView convertPoint:self.arrowShowPoint toView:self];
     CGSize arrowSize = self.arrowSize;
-    CGFloat cornerRadius = self.cornerRadius;
+    CGFloat cornerRadius = self.cRadius;
     CGSize size = self.bounds.size;
 
     switch (self.popoverPosition) {
